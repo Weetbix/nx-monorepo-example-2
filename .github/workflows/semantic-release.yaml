@@ -27,5 +27,6 @@ jobs:
       - run: yarn install
 
       - run: npx nx affected --target=version --base=origin/main~1 --head=origin/main
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
