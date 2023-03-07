@@ -19,7 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 2
+          # Fetch all the tags, so semver can work out the latest version
+          fetch-depth: 0
 
       - name: configure git
         run: |
