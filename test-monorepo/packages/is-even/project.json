@@ -5,19 +5,10 @@
   "projectType": "library",
   "targets": {
     "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "conventional",
-        "postTargets": ["is-even:npm"]
-      }
+      "executor": "@jscutlery/semver:version"
     },
     "npm": {
-      "executor": "ngx-deploy-npm:deploy",
-      "options": {
-        "distFolderPath": "packages/is-even",
-        "access": "public",
-        "dryRun": "${dryRun}"
-      }
+      "executor": "ngx-deploy-npm:deploy"
     }
   }
 }

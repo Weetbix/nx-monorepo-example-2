@@ -13,5 +13,21 @@
         ]
       }
     }
+  },
+  "targetDefaults": {
+    "version": {
+      "options": {
+        "preset": "conventional",
+        "postTargets": ["${projectName}:npm"]
+      }
+    },
+    "npm": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "distFolderPath": "packages/${projectName}",
+        "access": "public",
+        "dryRun": true
+      }
+    }
   }
 }
