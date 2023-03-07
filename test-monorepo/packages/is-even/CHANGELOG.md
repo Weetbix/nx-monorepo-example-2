@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### 0.0.1 (2023-03-07)
+
+
+### Bug Fixes
+
+* is-even use non strict equals ([714ac2d](https://github.com/Weetbix/nx-monorepo-example-2/commit/714ac2dc9f055c14af59fcbd9a991cd7e3527dde))
+
 ## 0.1.0 (2023-03-07)
 
 
