@@ -18,7 +18,9 @@
     "version": {
       "options": {
         "preset": "conventional",
-        "postTargets": ["{projectName}:npm"]
+        "postTargets": ["{projectName}:npm"],
+        "commitMessageFormat": "chore(${projectName}): release version ${version} [skip ci]",
+        "push": true
       }
     },
     "npm": {
