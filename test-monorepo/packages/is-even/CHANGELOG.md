@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+### [0.1.3](https://github.com/Weetbix/nx-monorepo-example-2/compare/is-even-0.1.2...is-even-0.1.3) (2023-03-07)
+
+
+### Features
+
+* test again ([49a96a9](https://github.com/Weetbix/nx-monorepo-example-2/commit/49a96a9cd7125feed226c18af146c029e5c6f316))
+
 ### [0.1.2](https://github.com/Weetbix/nx-monorepo-example-2/compare/is-even-0.1.1...is-even-0.1.2) (2023-03-07)
 
 ### [0.1.1](https://github.com/Weetbix/nx-monorepo-example-2/compare/is-even-0.0.1...is-even-0.1.1) (2023-03-07)
