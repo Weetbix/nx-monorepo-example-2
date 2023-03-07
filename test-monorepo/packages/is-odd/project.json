@@ -8,16 +8,15 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "options": {
-          "postTargets": ["is-odd:npm"]
-        }
+        "postTargets": ["is-odd:npm"]
       }
     },
     "npm": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
+        "distFolderPath": "packages/is-odd",
         "access": "public",
-        "dryRun": true
+        "dryRun": "${dryRun}"
       }
     }
   }
