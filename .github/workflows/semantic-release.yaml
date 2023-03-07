@@ -18,6 +18,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
 
       - name: configure git
         run: |
@@ -26,7 +28,7 @@ jobs:
 
       - run: yarn install
 
-      - run: npx nx affected --target=version --base=origin/main~1 --head=origin/main
+      - run: npx nx affected --target=version --base=HEAD~1 --head=HEAD
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
