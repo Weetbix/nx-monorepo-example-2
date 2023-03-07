@@ -18,13 +18,13 @@
     "version": {
       "options": {
         "preset": "conventional",
-        "postTargets": ["${projectName}:npm"]
+        "postTargets": ["{projectName}:npm"]
       }
     },
     "npm": {
       "executor": "ngx-deploy-npm:deploy",
       "options": {
-        "distFolderPath": "packages/${projectName}",
+        "distFolderPath": "packages/{projectName}",
         "access": "public",
         "dryRun": true
       }
