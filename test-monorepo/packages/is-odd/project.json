@@ -5,19 +5,10 @@
   "projectType": "library",
   "targets": {
     "version": {
-      "executor": "@jscutlery/semver:version",
-      "options": {
-        "preset": "conventional",
-        "postTargets": ["is-odd:npm"]
-      }
+      "executor": "@jscutlery/semver:version"
     },
     "npm": {
-      "executor": "ngx-deploy-npm:deploy",
-      "options": {
-        "distFolderPath": "packages/is-odd",
-        "access": "public",
-        "dryRun": "${dryRun}"
-      }
+      "executor": "ngx-deploy-npm:deploy"
     }
   }
 }
